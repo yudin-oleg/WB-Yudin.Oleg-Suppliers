@@ -1,0 +1,269 @@
+.supplies-list {
+	max-height: 100%;
+	padding: 0px 16px 0px 16px;
+	margin-top: 24px;
+	/* overflow: scroll; */
+}
+.item-supply {
+	width: 100%;
+	height: 98px;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.08);
+	border-radius: 14px;
+	padding: 4px;
+}
+.item-supply:hover {
+	background-color: rgba(255, 255, 255, 0.24);
+}
+.item-supply + .item-supply {
+	margin-top: 4px;
+}
+.big-screen-item-supply {
+	width: 100%;
+	height: 98px;
+	background-color: rgba(255, 255, 255, 0.08);
+	border-radius: 14px;
+	padding: 4px;
+}
+.number-date-container {
+	display: flex;
+}
+.number-date-info {
+	width: 149.5px;
+	height: 50px;
+}
+.edit {
+	width: 40px;
+	height: 40px;
+	margin: 25px 4px 25px 0px;
+}
+.edit img {
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.edit-big-screen {
+	display: none;
+}
+.big-screen-headers {
+	display: none;
+}
+.mobile-supplies-list {
+	display: block;
+	/* overflow: scroll; */
+}
+.big-screen-supplies-list {
+	display: none;
+}
+.supply-info-title {
+	height: 22px;
+	padding: 6px 6px 0px 6px;
+	font-weight: 560;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 1%;
+	color: var(--cloudy);
+	opacity: 40%;
+}
+.supply-info {
+	height: 28px;
+	padding: 4px 8px 4px 8px;
+	font-weight: 560;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--cloudy);
+}
+.id-status-container {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	display: inline-block;
+}
+.status-success {
+	/* width: 51px; */
+	height: 24px;
+	padding: 2px 4px 2px 4px;
+	gap: 4px;
+	border-radius: 6px;
+	opacity: 0px;
+	background-color: #14532b;
+}
+.status-success p {
+	font-weight: 560;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #85ef89;
+}
+.status-fail {
+	/* width: 113px; */
+	height: 24px;
+	padding: 2px 4px 2px 4px;
+	gap: 4px;
+	border-radius: 6px;
+	opacity: 0px;
+	background-color: #7c3d12;
+}
+.status-fail p {
+	font-weight: 560;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fdb172;
+}
+.edit-delete {
+	top: 10px;
+}
+.table-headers {
+	display: flex;
+	height: 36px;
+	padding: 10px 12px;
+	margin-bottom: 4px;
+	/* gap: 8px; */
+}
+.table-title {
+	/* min-width: 90px; */
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 560;
+	line-height: 16px;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: #ffffff;
+	text-align: left;
+	opacity: 1;
+}
+
+@media (min-width: 1024px) {
+	.supplies-list {
+		margin-top: 0px;
+	}
+	.number-date-container {
+		display: none;
+	}
+	.big-screen-headers {
+		display: flex;
+	}
+	.mobile-supplies-list {
+		display: none;
+	}
+	.big-screen-supplies-list {
+		display: block;
+		/* overflow: scroll; */
+	}
+	.edit {
+		display: none;
+	}
+	.edit-big-screen {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 25px 4px 25px 0px;
+		position: relative;
+	}
+	.edit-big-screen img {
+		width: 20px;
+		height: 20px;
+		margin-top: 10px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+	.item-supply {
+		height: 72px;
+		padding: 0px;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 12px;
+		padding-right: 4px;
+	}
+	.item-supply-data {
+		display: flex;
+	}
+	.id {
+		width: 92px;
+	}
+	.date {
+		width: 120px;
+	}
+	.town {
+		width: 156px;
+	}
+	.quantity {
+		width: 138px;
+	}
+	.supply-type {
+		width: 134px;
+	}
+	.store-house {
+		width: 376px;
+	}
+	.status {
+		width: 120px;
+	}
+	.supply-info {
+		/* min-width: 90px; */
+		/* margin: 8px; */
+		padding: 0px;
+		text-align: left;
+	}
+	.supply-info + .supply-info {
+		margin-left: 8px;
+	}
+	.table-title + .table-title {
+		margin-left: 8px;
+	}
+	.store-house-address {
+		max-width: 364px;
+		min-width: 90px;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 560;
+		line-height: 16px;
+		letter-spacing: 0.01em;
+		text-align: left;
+		color: #ffffff;
+		opacity: 0.24;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.id-status-container {
+		width: 120px;
+		margin-left: 0px;
+	}
+	table {
+		height: fit-content;
+		/* border-spacing: 0; */
+		border-collapse: collapse;
+		border-radius: 10px;
+	}
+	th,
+	td {
+		/* Remove any borders from our stylesheet. */
+		border: 0;
+
+		/* Use the spread value on the box-shadow to set the border width. */
+		box-shadow: 0 0 0 1px black;
+	}
+	.status-success,
+	.status-fail {
+		display: inline;
+		width: auto;
+		font-size: 11px;
+		font-weight: 560;
+		line-height: 14px;
+		letter-spacing: 0.02em;
+		text-align: left;
+	}
+	.status-success {
+		color: #85ef89;
+	}
+	.status-fail {
+		color: #fdb172;
+	}
+}

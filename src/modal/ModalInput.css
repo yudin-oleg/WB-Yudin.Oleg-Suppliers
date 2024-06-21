@@ -1,0 +1,101 @@
+/* .modal-edit-container{
+    width: 100%;
+} */
+.modal-edit-item{
+    margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 440;
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.addNew{
+    margin-top: 12px;
+}
+.addNew:first-child{
+    margin-top: 16px;
+}
+.modal-edit-title{
+    height: 22px;
+    padding: 6px 6px 0px 6px;
+    margin-bottom: 8px;
+    opacity: 40%;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 560;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+.modal-edit-list{
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    padding: 12px 16px 12px 16px;
+    gap: 6px;
+    border-radius: 10px;
+    opacity: 0px;
+    background-color: rgba(255, 255, 255, .08);
+    position: relative;
+}
+.modal-edit-list-container{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-edit-list-pop-up{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 110;
+}
+.modal-edit-list img{
+    height: 6px;
+    width: 13px;
+}
+.quantity{
+    opacity: 25%;
+}
+.modal-button{
+    margin-top: 24px;
+    height: 36px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px;
+    gap: 10px;
+    background-color: #4649E5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 560;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.modal-button:hover{
+    background-color: #6366F1 ;
+}
+.calendar{
+    width: 16px !important;
+    height: 17px !important;
+    top: 2px;
+    left: 2px;
+}
+.quantity-input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 440;
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.modal-edit-list:hover{
+    background-color: rgba(255, 255, 255, .24);
+}

@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "ALS Hauss VF";
+	src: url("ALSHauss-BoldItalic.ttf") format("ttf"),
+		url("ALSHauss-MediumItalic.ttf") format("ttf"),
+		url("ALSHauss-RegularItalic.ttf") format("ttf");
+}
+/* Начальные стили */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	font-family: "ALS Hauss VF", sans-serif;
+	font-style: normal;
+	box-sizing: border-box;
+	border: none;
+}
+#root,
+body,
+html {
+	width: 100%;
+	/* overflow: scroll; */
+}
+/* переменные */
+:root {
+	--ashy: #2d2c32;
+	--cloudy: #ffffff;
+}
+@media (min-width: 1024px) {
+	#root,
+	body,
+	html {
+		height: 100%;
+	}
+}
